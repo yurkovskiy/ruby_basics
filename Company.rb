@@ -15,4 +15,17 @@ module Company
     end
   end
 
+  class Manager < Worker
+    attr_reader :bonus
+    def initialize(name, surname, dep, salary, bonus)
+      super(name, surname, dep, salary)
+      @bonus = bonus
+    end
+
+    def salary
+      @salary + @bonus
+    end
+  
+  end
+
 end  
