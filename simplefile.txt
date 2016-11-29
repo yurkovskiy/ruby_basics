@@ -1,1 +1,2 @@
 Just simple text
+The second line
